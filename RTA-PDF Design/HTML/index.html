@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART Apporval Record</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        .main{
+            padding: 0px 10px;
+        }
+        .table-1 td:first-child span:first-child{
+            font-weight: 600;
+            width: 150px;
+            display: inline-block;
+        }
+        .table-1 td:nth-child(2) span:first-child{
+            padding-left: 15px;
+            width: 120px;
+            display: inline-block;
+            font-weight: 600;
+        }
+        td{
+            padding-top: 7px;
+        }
+        .table-1 td{
+            width: 50%;
+        }
+        .table-red caption, .table-red th, .table-comment caption, .table-comment th{
+            font-weight: 600;
+            text-align: left;
+            padding-bottom: 5px;
+        }
+        .table-red th{
+            background-color: #ed0000;
+            color: #fff;
+            position: relative;
+        }
+        .table-red th::after{
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: calc(100% + 4px);
+            background-color: #fff;
+            top: -2px;
+            right: 10px;
+            transform: rotate(30deg);
+        }
+        .table-red th:last-child::after{
+            width: 0px;
+        }
+        .table-red th,  .table-red td, .table-comment th , .table-comment td{
+            padding: 5px 10px;
+        }
+        .table-red tr{
+            background-color: #f2f2f2;
+            border-bottom: 1px solid #ccc;
+        }
+        .table-red tbody tr:last-child{
+            border-bottom: 0px;
+        }
+        .table-comment th{
+            background-color: #f2f2f2;
+            font-size: 13px;
+        }
+        .arrow{
+            width: 30px;
+        }
+        .mt-20{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div style="position: relative;">
+        <img src="RTA-1.png" alt="" style="width: 100%;">
+        <h3 style="position: absolute;color: #fff; top: 30px; left: 20px;">CART Approval Record</h3>
+        <img src="logo.png" alt="" style="width: 150px; position: absolute;right: 10px; top: 10px;">
+    </div>
+    <div class="main">
+        <table style="border-collapse: collapse; width: 100%;"  class="table-1">
+            <tbody>
+                <tr>
+                    <td><span>CART Request ID </span><b>:</b> 100615</td>
+                    <td><span style="width: auto;">OPMS Code/Contract No.</span><b>:</b> </td>
+                </tr>
+                <tr>
+                    <td><span>Project Name</span><b>:</b> NOL Card</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span>Request Description</span><b>:</b> Sanga Test</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span>Submission Date</span><b>:</b> 11/08/2020</td>
+                    <td><span>Closure Date</span><b>:</b> 11/08/2020</td>
+                </tr>
+                <tr>
+                    <td><span style="display: table-cell;">Document Type</span><b style="display: table-cell; padding-right: 4px;">:</b> <span style="display: table-cell;">Business Case (Implementation Porject)</span> </td>
+                    <td><span style="display: table-cell;">Agency/Sector</span><b style="display: table-cell; padding-right: 4px;">:</b> <span style="display: table-cell;">Corporate Administrative Support Services</span> </td>
+                </tr> 
+                <tr>
+                    <td><span>Request Name</span><b>:</b> requestor</td>
+                    <td><span>Apporval Type</span><b>:</b> Conditional</td>
+                </tr> 
+                <tr>
+                    <td><span>Deparment</span><b>:</b> Customer Service</td>
+                    <td></td>
+                </tr> 
+            </tbody>
+        </table>
+
+        <table style="border-collapse: collapse; width: 100%;" class="table-red mt-20">
+            <caption>Reviewer Approvals Section :</caption>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Domain</th>
+                    <th>Reviewer Name</th>
+                    <th>Approved On</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>Governance</td>
+                    <td>Shadi</td>
+                    <td>01/11/2020</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>BA</td>
+                    <td>Kashif</td>
+                    <td>12/10/2020</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <table style="border-collapse: collapse; width: 100%;" class="table-red mt-20">
+            <caption>CART Chairperson / Deputy :</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Signature</th>
+                    <th>Approved On</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>cart_chairman</td>
+                    <td>Signature</td>
+                    <td>12/14/2020</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table style="border-collapse: collapse; width: 100%;" class="table-comment mt-20">
+            <caption>Reviewer Comments Section :</caption>
+            <tbody>
+                <tr>
+                    <th>1. Reviewer Name : Shadi</th>
+                    <th>Domain : Governance</th>
+                    <th>Comment On : 11/08/2020</th>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <table style="border-collapse: collapse; width: 100%" >
+                            <tbody>
+                                <tr>
+                                    <td style="width: 50px; text-align: right;" rowspan="2" >
+                                        <img src="arrow.png" alt="" class="arrow">
+                                    </td>
+                                    <th style="border: 1px solid #ccc; border-right: none;">Resolution By : Requestor</th>
+                                    <th style="border: 1px solid #ccc; border-left: none;">Comment On : 11/08/2020</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="border: 1px solid #ccc;">
+                                        resovled 1
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>2. Reviewer Name : Kashif</th>
+                    <th>Domain : BA</th>
+                    <th>Comment On : 11/08/2020</th>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <table style="border-collapse: collapse; width: 100%" >
+                            <tbody>
+                                <tr>
+                                    <td style="width: 50px; text-align: right;" rowspan="2" >
+                                        <img src="arrow.png" alt="" class="arrow">
+                                    </td>
+                                    <th style="border: 1px solid #ccc; border-right: none;">Resolution By : Requestor</th>
+                                    <th style="border: 1px solid #ccc; border-left: none;">Comment On : 11/08/2020</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="border: 1px solid #ccc;">
+                                        resovled 1
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>1. Reviewer Name : Shadi</th>
+                    <th>Domain : Governance</th>
+                    <th>Comment On : 11/08/2020</th>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <table style="border-collapse: collapse; width: 100%" >
+                            <tbody>
+                                <tr>
+                                    <td style="width: 50px; text-align: right;" rowspan="2" >
+                                        <img src="arrow.png" alt="" class="arrow">
+                                    </td>
+                                    <th style="border: 1px solid #ccc; border-right: none;">Resolution By : Requestor</th>
+                                    <th style="border: 1px solid #ccc; border-left: none;">Comment On : 11/08/2020</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="border: 1px solid #ccc;">
+                                        resovled 1
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <p><b>Comments by CART Chairperson/Deputy :</b> Please check conditional apporval comments</p>
+
+        <p><b>Conditional Approval Comments by CART Chairperson/Deputy :</b> Conditionally approved</p>
+
+        <table style="border-collapse: collapse; width: 100%;" class="table-red mt-20">
+            <caption>Risk Elobaration :</caption>
+            <thead>
+                <tr>
+                    <th>Domain</th>
+                    <th>Defined Risk</th>
+                    <th>Risks Elobaration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Governance</td>
+                    <td>10</td>
+                    <td>risk_elobration comment appears here</td>
+                </tr>
+                <tr>
+                    <td>BA</td>
+                    <td>12</td>
+                    <td>risk_elobration comment appears here</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table style="border-collapse: collapse; width: 100%;" class="table-red mt-20">
+            <caption>Value Optimization :</caption>
+            <thead>
+                <tr>
+                    <th>Domain</th>
+                    <th>Defined Values</th>
+                    <th>Value Optimization</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Governance</td>
+                    <td>10</td>
+                    <td>value_optiomization comment appears here</td>
+                </tr>
+                <tr>
+                    <td>BA</td>
+                    <td>12</td>
+                    <td>value_optiomization comment appears here</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table style="border-collapse: collapse; width: 100%;" class="table-red mt-20">
+            <caption>Cost Rationalization :</caption>
+            <thead>
+                <tr>
+                    <th>Domain</th>
+                    <th>Defined Cost</th>
+                    <th>Cost Rationalization</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Governance</td>
+                    <td>12</td>
+                    <td>rationalization_cost comment appears here</td>
+                </tr>
+                <tr>
+                    <td>BA</td>
+                    <td>11</td>
+                    <td>rationalization_cost comment appears here</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table style="border-collapse: collapse; width: 100%;" class="table-red mt-20">
+            <caption>Clarifications & Considerations :</caption>
+            <thead>
+                <tr>
+                    <th>Domain</th>
+                    <th>Clarifications</th>
+                    <th>Comment</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Governance</td>
+                    <td>10</td>
+                    <td>Clarifications & Considerations comment appears here</td>
+                </tr>
+                <tr>
+                    <td>BA</td>
+                    <td>11</td>
+                    <td>Clarifications & Considerations comment appears here</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table style="border-collapse: collapse; width: 100%;" class="table-red mt-20">
+            <caption>Business Case (Implementation Project) Attachement Comments Section :</caption>
+            <thead>
+                <tr>
+                    <th style="width: 60px;">No.</th>
+                    <th>Author</th>
+                    <th>Comment</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>sandeep</td>
+                    <td>Testing</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>sandeep</td>
+                    <td>Commented on various</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>sanghamitra</td>
+                    <td>Reply2</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>sandeep</td>
+                    <td>Testing</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>sandeep</td>
+                    <td>Commented on various</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>sanghamitra</td>
+                    <td>Reply2</td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td>sandeep</td>
+                    <td>Testing</td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td>sandeep</td>
+                    <td>Commented on various</td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td>sanghamitra</td>
+                    <td>Reply2</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+   
+</body>
+</html>
